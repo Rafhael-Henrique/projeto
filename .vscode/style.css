@@ -6,24 +6,24 @@
 
 :root {
   --text-color: black;
-  --bg-url: url(/assets/40056901.gif);
+  --bg-url: url();
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
-  --img-profile: url(/assets/73870113_041_ff57.jpg);
+  --img-profile: url();
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url(/assets/vagina1.png);
+  --switch-bg-url: url();
 }
 
 .light {
   --text-color: white;
-  --bg-url: url(/assets/39554661.gif);
+  --bg-url: url();
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
-  --img-profile: url(/assets/Screenshot_1.jpg);
+  --img-profile: url();
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.1);
-  --switch-bg-url: url(/assets/vagina.png);
+  --switch-bg-url: url();
 }
 
 body {
