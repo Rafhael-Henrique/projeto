@@ -6,26 +6,24 @@
 
 :root {
   --text-color: black;
-  --bg-color: white;
-  --bg-url: url(/assets/yoru-valorant.gif);
+  --bg-url: url(/assets/Background1.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --img-profile: url();
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url();
+  --switch-bg-url: url(/assets/seta-direita.png);
 }
 
 .light {
   --text-color: white;
-  --bg-color: black;
-  --bg-url: url(/assets/yoru-valorant.gif);
+  --bg-url: url(/assets/Background.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --img-profile: url();
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.1);
-  --switch-bg-url: url();
+  --switch-bg-url: url(/assets/seta-esquerda.png);
 }
 
 body {
@@ -86,11 +84,16 @@ body * {
   left: 0%;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-in-to-left 0.2s;
 }
 
 .light #switch button {
-  right: 0%;
-  left: initial;
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: solid var(--highlight-color);
 }
 
 #switch span {
@@ -173,10 +176,28 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(/assets/yoru-valorant.gif);
+    --bg-url: url(/assets/Background1.png);
   }
 
   .light {
-    --bg-url: url(/assets/yoru-valorant.gif);
+    --bg-url: url(/assets/Background.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-in-to-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
   }
 }
